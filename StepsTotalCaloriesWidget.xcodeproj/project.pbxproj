@@ -6,14 +6,65 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		878841A32F19D07A0035C31A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878841A22F19D07A0035C31A /* WidgetKit.framework */; };
+		878841A52F19D07A0035C31A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878841A42F19D07A0035C31A /* SwiftUI.framework */; };
+		878841B22F19D07B0035C31A /* StepsTotalCaloriesExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 878841A02F19D07A0035C31A /* StepsTotalCaloriesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		878841B02F19D07B0035C31A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 878841862F19D01F0035C31A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8788419F2F19D07A0035C31A;
+			remoteInfo = StepsTotalCaloriesExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		878841B72F19D07B0035C31A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				878841B22F19D07B0035C31A /* StepsTotalCaloriesExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8788418E2F19D01F0035C31A /* StepsTotalCaloriesWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepsTotalCaloriesWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		878841A02F19D07A0035C31A /* StepsTotalCaloriesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StepsTotalCaloriesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		878841A22F19D07A0035C31A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		878841A42F19D07A0035C31A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		878841B32F19D07B0035C31A /* Exceptions for "StepsTotalCalories" folder in "StepsTotalCaloriesExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8788419F2F19D07A0035C31A /* StepsTotalCaloriesExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		878841902F19D01F0035C31A /* StepsTotalCaloriesWidget */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = StepsTotalCaloriesWidget;
+			sourceTree = "<group>";
+		};
+		878841A62F19D07A0035C31A /* StepsTotalCalories */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				878841B32F19D07B0035C31A /* Exceptions for "StepsTotalCalories" folder in "StepsTotalCaloriesExtension" target */,
+			);
+			path = StepsTotalCalories;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,6 +77,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8788419D2F19D07A0035C31A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				878841A52F19D07A0035C31A /* SwiftUI.framework in Frameworks */,
+				878841A32F19D07A0035C31A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				878841902F19D01F0035C31A /* StepsTotalCaloriesWidget */,
+				878841A62F19D07A0035C31A /* StepsTotalCalories */,
+				878841A12F19D07A0035C31A /* Frameworks */,
 				8788418F2F19D01F0035C31A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +103,18 @@
 			isa = PBXGroup;
 			children = (
 				8788418E2F19D01F0035C31A /* StepsTotalCaloriesWidget.app */,
+				878841A02F19D07A0035C31A /* StepsTotalCaloriesExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		878841A12F19D07A0035C31A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				878841A22F19D07A0035C31A /* WidgetKit.framework */,
+				878841A42F19D07A0035C31A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +127,12 @@
 				8788418A2F19D01F0035C31A /* Sources */,
 				8788418B2F19D01F0035C31A /* Frameworks */,
 				8788418C2F19D01F0035C31A /* Resources */,
+				878841B72F19D07B0035C31A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				878841B12F19D07B0035C31A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				878841902F19D01F0035C31A /* StepsTotalCaloriesWidget */,
@@ -69,6 +143,28 @@
 			productName = StepsTotalCaloriesWidget;
 			productReference = 8788418E2F19D01F0035C31A /* StepsTotalCaloriesWidget.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8788419F2F19D07A0035C31A /* StepsTotalCaloriesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 878841B42F19D07B0035C31A /* Build configuration list for PBXNativeTarget "StepsTotalCaloriesExtension" */;
+			buildPhases = (
+				8788419C2F19D07A0035C31A /* Sources */,
+				8788419D2F19D07A0035C31A /* Frameworks */,
+				8788419E2F19D07A0035C31A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				878841A62F19D07A0035C31A /* StepsTotalCalories */,
+			);
+			name = StepsTotalCaloriesExtension;
+			packageProductDependencies = (
+			);
+			productName = StepsTotalCaloriesExtension;
+			productReference = 878841A02F19D07A0035C31A /* StepsTotalCaloriesExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +177,9 @@
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					8788418D2F19D01F0035C31A = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					8788419F2F19D07A0035C31A = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
@@ -100,12 +199,20 @@
 			projectRoot = "";
 			targets = (
 				8788418D2F19D01F0035C31A /* StepsTotalCaloriesWidget */,
+				8788419F2F19D07A0035C31A /* StepsTotalCaloriesExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8788418C2F19D01F0035C31A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8788419E2F19D07A0035C31A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +229,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8788419C2F19D07A0035C31A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		878841B12F19D07B0035C31A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8788419F2F19D07A0035C31A /* StepsTotalCaloriesExtension */;
+			targetProxy = 878841B02F19D07B0035C31A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		878841972F19D0200035C31A /* Debug */ = {
@@ -251,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StepsTotalCaloriesWidget/StepsTotalCaloriesWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YV56753Y7A;
@@ -283,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StepsTotalCaloriesWidget/StepsTotalCaloriesWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YV56753Y7A;
@@ -310,6 +434,66 @@
 			};
 			name = Release;
 		};
+		878841B52F19D07B0035C31A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YV56753Y7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StepsTotalCalories/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StepsTotalCalories;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.Dugas.Steph.StepsTotalCaloriesWidget.StepsTotalCalories;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		878841B62F19D07B0035C31A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YV56753Y7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StepsTotalCalories/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StepsTotalCalories;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.Dugas.Steph.StepsTotalCaloriesWidget.StepsTotalCalories;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +511,15 @@
 			buildConfigurations = (
 				8788419A2F19D0200035C31A /* Debug */,
 				8788419B2F19D0200035C31A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		878841B42F19D07B0035C31A /* Build configuration list for PBXNativeTarget "StepsTotalCaloriesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				878841B52F19D07B0035C31A /* Debug */,
+				878841B62F19D07B0035C31A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
