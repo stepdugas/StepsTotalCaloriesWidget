@@ -193,6 +193,9 @@
 			);
 			mainGroup = 878841852F19D01F0035C31A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				878841B92F19D1D40035C31A /* XCRemoteSwiftPackageReference "StepsTotalCaloriesWidget" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8788418F2F19D01F0035C31A /* Products */;
 			projectDirPath = "";
@@ -525,6 +528,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		878841B92F19D1D40035C31A /* XCRemoteSwiftPackageReference "StepsTotalCaloriesWidget" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stepdugas/StepsTotalCaloriesWidget.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 878841862F19D01F0035C31A /* Project object */;
 }
