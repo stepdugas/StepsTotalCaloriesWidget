@@ -1,8 +1,8 @@
 //
-//  StepsTotalCalories.swift
-//  StepsTotalCalories
+//  StepsTotalCaloriesWidget.swift
+//  StepsTotalCaloriesWidget
 //
-//  Created by Stephanie Dugas on 1/15/26.
+//  Created by Stephanie Dugas on 1/19/26.
 //
 
 import WidgetKit
